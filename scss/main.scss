@@ -1,0 +1,33 @@
+@import "partials/reset.scss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 90rem;
+  background-color: #fafafa;
+  margin: 0 auto;
+  padding: 6.88vw 15.19vw;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1025px) {
+  .container {
+    padding: 6.88vw 8vw;
+  }
+}
+
+@media (max-width: 426px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@import "partials/header.scss";
+@import "partials/content.scss";
+@import "partials/footer.scss";
+
+// sass --watch scss/main.scss css/main.css

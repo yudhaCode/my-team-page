@@ -1,0 +1,254 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 90rem;
+  background-color: #fafafa;
+  margin: 0 auto;
+  padding: 6.88vw 15.19vw;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1025px) {
+  .container {
+    padding: 6.88vw 8vw;
+  }
+}
+@media (max-width: 426px) {
+  .container {
+    padding: 0;
+  }
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90rem;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.header__heading {
+  font-family: "PT Serif", serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.10125rem;
+  flex: 2;
+}
+.header__profile {
+  flex: 2;
+}
+.header__title {
+  color: #000;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.63rem;
+}
+.header__desc {
+  max-width: 27.4375rem;
+  color: #000;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 426px) {
+  .header {
+    padding: 4.44rem 0.7rem;
+    padding-bottom: 3.6rem;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .header__heading {
+    margin-bottom: 2.37rem;
+  }
+  .header__desc {
+    font-size: 0.875rem;
+    max-width: 20.8125rem;
+  }
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content__wrapper {
+  position: relative;
+  padding: 20px;
+}
+.content__wrapper:nth-child(2), .content__wrapper:nth-child(5) {
+  margin-top: 6.5rem;
+}
+.content__image {
+  width: 100%;
+  max-width: 14.875rem;
+}
+.content__name {
+  color: #000;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0.94rem;
+}
+.content__role {
+  transform: rotate(90deg);
+  position: relative;
+  top: -17rem;
+  right: -9rem;
+  color: #000;
+  font-family: "PT Serif", serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 769px) {
+  .content__wrapper:nth-child(5) {
+    margin-top: 0;
+  }
+  .content__wrapper:nth-child(2n) {
+    margin-top: 6.5rem;
+  }
+}
+@media (max-width: 426px) {
+  .content__image {
+    max-width: 8.66994rem;
+  }
+  .content__name {
+    font-size: 0.875rem;
+  }
+  .content__role {
+    font-size: 0.625rem;
+    top: -10.8rem;
+    right: -5.1rem;
+  }
+  .content__wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .content__wrapper:nth-child(2n) {
+    margin-top: 3rem;
+  }
+  .content__wrapper:nth-child(odd) {
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 321px) {
+  .content {
+    justify-content: center;
+    align-items: center;
+  }
+  .content__wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+  .content__wrapper:nth-child(2n) {
+    margin-top: 0;
+  }
+  .content__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content__image {
+    max-width: 80%;
+  }
+  .content__role {
+    transform: rotate(0);
+    position: static;
+    text-align: center;
+  }
+}
+footer {
+  color: #a9a9a9;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 6rem;
+}
+
+/*# sourceMappingURL=main.css.map */
